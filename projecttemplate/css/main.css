@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -12,21 +12,7 @@ body {
 
 nav {
   background-color: #FE7E00;
-  position: relative;
-  display: block;
   color: white;
-  overflow: hidden;
-  padding: 2%;
-}
-
-img {
-  max-width: 100%;
-}
-
-nav img {
-  width: 6%;
-  height:auto;
-  float:left;
 }
 
 span.light-text {
@@ -37,18 +23,10 @@ ul {
   list-style: none;
   background-color: #FE7E00;
   text-align: center;
-  padding-right: 1%;
-}
-
-nav li {
-  display: inline-block;
-  padding-left: 3%;
-  float:right;
 }
 
 a {
   text-decoration: none;
-  width:100%;
 }
 
 .left-links a, .block-text p {
@@ -56,23 +34,8 @@ a {
   font-size: 1.5em;
 }
 
-.block-text  p {
-  padding: 5% 0;
-}
-
 .left-links a {
   color: white;
-  float: left;
-}
-
-.block-text {
-  position: relative;
-  top: 20%;
-}
-
-.block-image {
-  width: 125%;
-  height:auto;
 }
 
 div.block-text p {
@@ -81,11 +44,10 @@ div.block-text p {
 
 i.fa-search {
   opacity: 0.3;
-  float:right;
 }
 
 button, div.right-links a {
-  font-family:'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   border: none;
   font-size: .9em;
   text-align: center;
@@ -95,64 +57,15 @@ button, div.right-links a {
 
 #search-term {
   background-color: #DDDDDD;
-  padding: 0.3%;
-}
-
-button {
-  padding: 1% 1% 1% 1%;
-  width: 21.71314%;
-  margin-left: 3%;
-  margin-bottom: 6%;
-  float: right;
-  position: relative;
-  right: 3.5%;
-}
-
-main {
-  padding-right: 2.4%;
-}
-
-main p {
-  float: right;
 }
 
 main span {
   color: #7ACCC8;
 }
 
-.left-links {
-  display: inline-block;
-  width: 30%;
-  float: left;
-}
-
-.right-links {
-  display: inline-block;
-  width: 70%;
-}
-
-
-.right-links a {
-  float: right;
-}
-
-.search-box i {
-  position: relative;
-  left: 15%;
-}
 input {
   background-color: #EFEFEF;
   border: none;
-  float: right;
-}
-
-
-
-img {
-  display: inline-block;
-  float: left;
-  width: 30%;
-  height: auto;
 }
 
 .left-button {
@@ -164,12 +77,199 @@ img {
 }
 
 footer {
-  clear: both;
   background-color: #7ACCC8;
-  position: absolute;
-  top: 90%;
-  display: block;
   color: white;
-  padding: 2.35% 0;
-  width:100%;
+}
+
+br {
+  display: none;
+}
+
+/*For larger screens*/
+@media screen and (min-width: 714px) {
+  br.large {
+    display:block;
+  }
+  nav {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 2%;
+  }
+
+  nav img {
+    width: 6%;
+    height: auto;
+    float: left;
+  }
+
+  ul {
+    padding-right: 1%;
+  }
+
+  nav li {
+    display: inline-block;
+    padding-left: 3%;
+    float: right;
+  }
+
+  a {
+    width: 100%;
+  }
+
+  .block-text  p {
+    padding: 5% 0;
+  }
+
+  .left-links a {
+    float: left;
+  }
+
+  .block-text {
+    position: relative;
+    top: 20%;
+  }
+
+  .block-image {
+    width: 125%;
+    height: auto;
+  }
+
+  i.fa-search {
+    float: right;
+  }
+
+  #search-term {
+    padding: 0.3%;
+  }
+
+  button {
+    padding: 1% 1% 1% 1%;
+    width: 21.71314%;
+    margin-left: 3%;
+    margin-bottom: 6%;
+    float: right;
+    position: relative;
+    right: 3.5%;
+  }
+
+  main {
+    padding-right: 2.4%;
+  }
+
+  main p {
+    float: right;
+  }
+
+  .left-links {
+    display: inline-block;
+    width: 30%;
+    float: left;
+  }
+
+  .right-links {
+    display: inline-block;
+    width: 70%;
+  }
+
+  .right-links a {
+    float: right;
+  }
+
+  .search-box i {
+    position: relative;
+    left: 15%;
+  }
+
+  input {
+    float: right;
+  }
+
+  img {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  footer {
+    clear: both;
+    position: absolute;
+    top: 90%;
+    display: block;
+    padding: 2.35% 0;
+    width: 100%;
+  }
+}
+/*for smaller screens*/
+@media screen and (max-width: 713px) {
+  body {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .left-links {
+    text-align: center;
+  }
+
+  ul {
+    padding-right: 1%;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0 1%;
+  }
+
+  a {
+    width: 100%;
+  }
+  .block-text  p {
+    padding: 5% 0;
+  }
+
+  .left-links a {
+    float: left;
+  }
+
+  .block-text {
+    max-width: 90%;
+    position: relative;
+    top: 20%;
+  }
+
+  .block-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .search-box i {
+    margin: 10px auto;
+  }
+
+  #search-term {
+    padding: 0.3%;
+  }
+
+  br.small {
+    display:block;
+  }
+
+  button {
+    display:block;
+    padding: 1% 1% 1% 1%;
+    width: 50%;
+    margin: 0 auto 10px;
+    position: relative;
+  }
+
+  footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    padding: 1% 0;
+    width: 100%;
+    height: 5%;
+  }
 }
